@@ -1,9 +1,18 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Navigation.css';
 
 function Navigataion() {
     return (
-        <div style={{width: "100%", height: "40px", background: "#000"}}>
-            
+        <div className="navigation">
+            <div className="logo">Logo</div>
+
+            <div className="nav-item">
+                <Link to="/">Home</Link>
+                <Link to="/">Donate</Link>
+                <Link to="/">About</Link>
+                <Link to="/login">SignIn</Link>
+            </div>
         </div>
     )
 }
